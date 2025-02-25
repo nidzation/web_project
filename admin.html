@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles/admin.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+        }
+        main {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        input, button, select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard</h1>
+  </header>
+  <main>
+    <section id="login-section">
+      <label for="admin-password">Enter Admin Password:</label>
+      <input type="password" id="admin-password" placeholder="Enter Admin Password" />
+      <button id="admin-login-btn">Login</button>
+    </section>
+    
+    <section id="admin-panel" class="hidden">
+      <h2>Manage Users</h2>
+      <label for="select-user">Select User:</label>
+      <select id="select-user"></select>
+      
+      <div class="user-management">
+        <label for="edit-username">New Username:</label>
+        <input type="text" id="edit-username" />
+        
+        <label for="edit-password">New Password:</label>
+        <input type="password" id="edit-password" />
+        
+        <label for="edit-credits">New Credits:</label>
+        <input type="number" id="edit-credits" value="0" />
+        
+        <button id="update-user-btn">Update User</button>
+        <button id="delete-user-btn">Delete User</button>
+      </div>
+      
+      <h2>Create New User</h2>
+      <div class="user-creation">
+        <label for="new-username">Username:</label>
+        <input type="text" id="new-username" />
+        
+        <label for="new-password">Password:</label>
+        <input type="password" id="new-password" />
+        
+        <label for="new-credits">Credits:</label>
+        <input type="number" id="new-credits" value="0" />
+        
+        <button id="create-user-btn">Create User</button>
+      </div>
+      
+      <h2>Current Users</h2>
+      <ul id="user-list"></ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 OpenSourceCasino. All Rights Reserved.</p>
+  </footer>
+  <script src="scripts/admin.js"></script>
+</body>
+</html>

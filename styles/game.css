@@ -1,0 +1,24 @@
+Set-Content I:\web_project\offline-website\styles\game.css @'
+/* game.css: Styles for game.html */
+#game-container {
+  margin: 20px;
+  text-align: center;
+}
+
+#reels {
+  margin: 20px 0;
+}
+
+#reels span {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 2em;
+  width: 40px;
+  text-align: center;
+}
+
+#result-message {
+  margin-top: 20px;
+  font-weight: bold;
+}
+'@

@@ -1,0 +1,72 @@
+/* admin.css: Styles for admin.html */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+}
+
+main {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.hidden {
+  display: none;
+}
+
+#login-section, #admin-panel {
+  margin: 20px;
+}
+
+#admin-panel label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input, button, select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+#user-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#user-list li {
+  background: #f8f8f8;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}

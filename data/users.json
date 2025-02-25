@@ -1,0 +1,14 @@
+Set-Content I:\web_project\offline-website\data\users.json @'
+[
+  {
+    "username": "Nidzation",
+    "password": "Sendvic96!",
+    "credits": 999
+  },
+  {
+    "username": "demoUser",
+    "password": "demoPass",
+    "credits": 10
+  }
+]
+'@

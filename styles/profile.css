@@ -1,0 +1,9 @@
+/* profile.css: Styles for profile.html */
+#login-section {
+    margin: 20px;
+}
+
+#profile-username, #profile-credits {
+    font-weight: bold;
+    color: #007ACC;
+}
